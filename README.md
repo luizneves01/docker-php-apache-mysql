@@ -1,4 +1,4 @@
-#Explicação do arquivo docker-compose
+# Explicação do arquivo docker-compose
 
 version: '3' -> ultima versao do docker-compose
 services: -> serviços a serem executados
@@ -21,7 +21,7 @@ services: -> serviços a serem executados
     depends_on:
       - db -> indica que o serviço web só vai ser executado depois do serviço de banco de dados
 
-#Explicação do arquivo Dockerfile
+# Explicação do arquivo Dockerfile
 
 FROM webdevops/php-apache:alpine-php7 -> imagem base onde consta o PHP 7 junto com apache2
 COPY . /app -> está copiando a raiz do código para a pasta app onde o apache2 esta apontando como localhost
