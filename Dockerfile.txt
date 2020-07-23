@@ -1,2 +1,0 @@
-FROM webdevops/php-apache:alpine-php7 -> imagem base onde consta o PHP 7 junto com apache2
-COPY . /app -> está copiando a raiz do código para a pasta app onde o apache2 esta apontando como localhost
