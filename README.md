@@ -11,6 +11,8 @@ services: -> serviços a serem executados
        MYSQL_USER: 'proposta' -> usuario do mysql
        MYSQL_PASSWORD: 'q1w2e3r4' -> senha do usuario mysql
        MYSQL_ROOT_PASSWORD: 'q1w2e3r4' -> usuario root do mysql
+    volumes: -> volume para disponibilizar scripts mysql
+       - ./mysqldados:/app -> caminho dos arquivos mysql para o container mysql
   web: -> serviço php + apache2
     build:
       context: ./ -> caminho do arquivo Dockerfile
